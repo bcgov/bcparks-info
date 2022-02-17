@@ -1,0 +1,7 @@
+<span class="centered"
+    *ngIf="alertService.alerts && alertService.alerts.length > 0">
+    <p *ngFor="let alert of alertService.alerts">
+        <ngb-alert [type]="alert.type"
+            (closed)="close(alert)">{{ alert.message }}</ngb-alert>
+    </p>
+</span>

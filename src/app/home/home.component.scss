@@ -1,0 +1,125 @@
+@import "@digitalspace/bcparks-bootstrap-theme/dist/scss/_variables.scss";
+
+// Camping Welcome
+.camping-welcome {
+  padding-top: 80px;
+  margin-bottom: 100px;
+  background-image: url("/assets/images/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.camping-welcome_main-heading {
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-size: 3rem;
+}
+.camping-welcome_sub-heading {
+  margin-bottom: 64px;
+}
+.camping-welcome_screenshots-container {
+  margin-top: -100px;
+}
+.camping-welcome_screenshots {
+  position: relative;
+  top: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+// Camping Description
+.camping-description {
+  max-width: 682px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 160px;
+}
+
+// Video
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-container {
+  margin-top: 100px;
+}
+
+// Research
+.research {
+  background-image: url("/assets/images/research-intake.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  border-radius: 16px;
+  padding: 32px;
+  color: #fff;
+  margin-top: 100px;
+}
+.research_large-screen img {
+  width: 300px;
+  margin-left: -30px;
+}
+.research_narrow-screen {
+  display: unset;
+}
+.research_narrow-screen_flex-container {
+  height: 100%;
+}
+.research_narrow-screen_content {
+  width: 100%;
+  background-color: $primary-nav;
+  border-radius: 0 0 16px 16px;
+  padding: 48px 32px;
+}
+.research_narrow-screen_content a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.btn {
+  background-color: #fff;
+  border: 1px solid $primary-nav;
+}
+.research_mobile-link {
+  color: white;
+  text-decoration: none;
+}
+.research_mobile-link:hover {
+  color: $bcgold;
+}
+
+// Social Media
+.social-media {
+  margin-top: 100px;
+  color: $primary-nav;
+}
+.social-media_icon {
+  margin: 0 8px;
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+@media (max-width: 767.98px) {
+  // Camping Welcome
+  .camping-welcome {
+    padding-top: 0px;
+  }
+  .camping-welcome_screenshots {
+    top: 75px;
+  }
+
+  // Camping Description
+  .camping-description {
+    margin-top: 100px;
+  }
+
+  .research {
+    padding: 0;
+  }
+}
