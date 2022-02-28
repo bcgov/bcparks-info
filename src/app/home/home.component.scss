@@ -57,7 +57,7 @@
   border-radius: 16px;
   padding: 32px;
   color: #fff;
-  margin-top: 100px;
+  margin-top: 75px;
 }
 .research_large-screen img {
   width: 300px;
@@ -93,7 +93,7 @@
 
 // Social Media
 .social-media {
-  margin-top: 100px;
+  margin-top: 50px;
   color: $primary-nav;
 }
 .social-media_icon {
@@ -116,10 +116,21 @@
 
   // Camping Description
   .camping-description {
-    margin-top: 100px;
+    margin-top: 0px;
+  }
+
+  .video-container {
+    margin-top: 50px;
   }
 
   .research {
+    margin-top: 50px;
     padding: 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .research {
+    margin-top: 15px;
   }
 }
